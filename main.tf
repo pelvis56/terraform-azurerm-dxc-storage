@@ -2,7 +2,6 @@ resource "azurerm_storage_account" "standard-storage" {
   name                      = "${var.storage_account_name}"
   location                  = "${var.location}"
   resource_group_name       = "${var.resource_group_name}"
-  minimum_tls_version       = "TLS1_2"
   account_tier              = "Standard"
   account_replication_type  = "${var.standard_replication_type}"
   enable_https_traffic_only = true
@@ -16,6 +15,7 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   parameters = {
     storage_account_name          = var.storage_account_name
     location                      = var.location
+    tls_version                      = var.tls_version
     StorageAccountKind            = "StorageV2"
   }
 }

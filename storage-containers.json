@@ -9,22 +9,21 @@
       },
     "variables": {
     },
-    "resources":
-    {
-        "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2019-04-01",
-        "name": "[parameters('storage_account_name')]",
-        "location": "[parameters('location')]",
-        "sku": {
-          "name": "[parameters('standard_replication_type')]"
-        },
-        "kind": "[parameters('StorageAccountKind')]",
-        "properties": {
-            "MinimumTlsVersion" = "[parameters('tls_version')]"
-        },
-        "resources": [ 
-           {
-               {
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-04-01",
+            "name": "[parameters('storage_account_name')]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "[parameters('standard_replication_type')]"
+            },
+            "kind": "[parameters('StorageAccountKind')]",
+            "properties": {
+                "MinimumTlsVersion" = "[parameters('tls_version')]"
+            },
+            "resources": [
+                {
                     "name": "default/images",
                     "type": "blobServices/containers",
                     "apiVersion": "2018-07-01",
@@ -40,7 +39,7 @@
                         "[parameters('storage_account_name')]"
                     ]
                 }
-           }
-        ]
-    } 
+            ]
+        }        
+     ]
 }

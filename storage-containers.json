@@ -6,12 +6,11 @@
         "metadata": {
           "description": "Storage Account Name"
         }
-      }     
-    },
+      },
     "variables": {
     },
-    "resources": [
-      {
+    "resources":
+    {
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2019-04-01",
         "name": "[parameters('storage_account_name')]",
@@ -43,6 +42,5 @@
                 }
            }
         ]
-      }
-    ]
-  }
+    } 
+}

@@ -29,9 +29,6 @@
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2018-07-01",
         "location": "[parameters('location')]",
-	"properties": {
-		"minimum_tls_version" = "[parameters('tls_version')]"
-	},
         "resources": [
             {
                 "name": "default/images",

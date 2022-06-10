@@ -5,7 +5,7 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   template_body       = file("storage-containers.json",)
   parameters = {
     storage_account_name    = var.storage_account_name
-    storage_account_type    = var.storage_account_type
+    standard_replication_type    = var.standard_replication_type
     location                = var.location
     StorageAccountKind      = "StorageV2"
   }

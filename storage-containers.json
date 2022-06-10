@@ -1,37 +1,12 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-      "standard_replication_type": {
-        "type": "string",
-        "metadata": {
-          "description": "Storage Account type"
-        }
-      },
-      "location": {
-        "type": "string",
-        "metadata": {
-          "description": "Location for all resources."
-        }
-      },
+    "contentVersion": "1.0.0.0",    
       "storage_account_name": {
         "type": "string",
         "metadata": {
           "description": "Storage Account Name"
         }
-      },
-      "tls_version": {
-        "type": "string",
-        "metadata": {
-          "description": "Azure Storage Account TLS version"
-        }
-      },
-      "StorageAccountKind": {
-        "type": "string",
-        "metadata": {
-          "description": "Storage Account Kind"
-        }
-      }
+      }     
     },
     "variables": {
     },

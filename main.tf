@@ -5,6 +5,19 @@ resource "azurerm_storage_account" "standard-storage" {
   account_tier              = "Standard"
   account_replication_type  = "${var.standard_replication_type}"
   enable_https_traffic_only = true
+  blob_properties {
+    delete_retention_policy {
+      days = 30
+    }
+  }
+  blob_properties {
+    delete_retention_policy {
+      days = 30
+    }
+  }
+  container_delete_retention_policy {
+      days = 30
+  }
 }
 
 resource "azurerm_template_deployment" "storage_account_arm" {

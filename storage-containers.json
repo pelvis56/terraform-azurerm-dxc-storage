@@ -30,7 +30,7 @@
         "apiVersion": "2018-07-01",
         "location": "[parameters('location')]",
 	"properties": {
-            "minimumTlsVersion": "[parameters('tls_version')]",
+            "minimumTlsVersion": "[parameters('tls_version')]"
         },
         "resources": [
             {

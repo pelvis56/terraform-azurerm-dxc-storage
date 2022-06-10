@@ -9,6 +9,9 @@ resource "azurerm_storage_account" "standard-storage" {
     delete_retention_policy {
       days = 30
     }
+    container_delete_retention_policy {
+      days = 30
+    }
   }  
 }
 

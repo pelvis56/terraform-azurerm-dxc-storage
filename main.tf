@@ -17,11 +17,5 @@ resource "azurerm_template_deployment" "stdstorage-containers" {
   depends_on = [
     "azurerm_storage_account.standard-storage"
   ]
- 
-  parameters {
-    location           = "${var.location}"
-    storageAccountName = "${azurerm_storage_account.standard-storage.name}"
-  }
-
   template_body = "${file("${path.module}/storage-containers.json")}"  
 }

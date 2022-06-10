@@ -11,6 +11,9 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   name                      = var.storage_account_name
   resource_group_name       = var.resource_group_name
   deployment_mode           = "Incremental"
+  depends_on = [
+    "azurerm_storage_account.standard-storage",
+  ]
   template_body             = file("storage-containers.json")
   parameters = {
     storage_account_name          = var.storage_account_name

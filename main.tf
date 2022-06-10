@@ -6,7 +6,7 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   parameters = {
     StorageAccountName      = var.storage_account_name
     storageAccountType      = var.storage_account_type
-    location                = var.storage_account_location
+    location                = var.location
     StorageAccountKind      = "StorageV2"
   }
 }

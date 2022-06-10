@@ -45,14 +45,14 @@
           "name": "[parameters('standard_replication_type')]"
         },
         "kind": "[parameters('StorageAccountKind')]",
-        "properties": {}
+        "properties": {},
         "resources": [
             {
                 "name": "default/images",
                 "type": "blobServices/containers",
                 "apiVersion": "2018-07-01",
                 "dependsOn": [
-					"[parameters('storage_account_name')]"
+			"[parameters('storage_account_name')]"
                 ]
             },
             {
@@ -60,7 +60,7 @@
                 "type": "blobServices/containers",
                 "apiVersion": "2018-07-01",
                 "dependsOn": [
-					"[parameters('storage_account_name')]"
+			"[parameters('storage_account_name')]"
                 ]
             }
         ]

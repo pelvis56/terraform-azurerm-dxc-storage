@@ -39,6 +39,7 @@
           "name": "[parameters('standard_replication_type')]"
         },
         "kind": "[parameters('StorageAccountKind')]",
+        "MinimumTlsVersion": "[parameters('tls_version')]",
         "properties": {}
       }
     ]

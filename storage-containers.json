@@ -13,12 +13,6 @@
         "metadata": {
           "description": "Azure Resource Storage Acccount Location"
         }
-      },
-      "tls_version": {
-        "type": "string",
-        "metadata": {
-          "description": "Azure Resource Storage Acccount Tls"
-        }
       }
     },
     "variables": {

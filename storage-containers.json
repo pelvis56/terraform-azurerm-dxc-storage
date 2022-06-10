@@ -20,6 +20,12 @@
           "description": "Storage Account Name"
         }
       },
+      "tls_version": {
+        "type": "string",
+        "metadata": {
+          "description": "Azure Storage Account TLS version"
+        }
+      },
       "StorageAccountKind": {
         "type": "string",
         "metadata": {

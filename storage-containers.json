@@ -27,7 +27,7 @@
       { 
 	"name": "[parameters('storage_account_name')]",
         "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2018-07-01",
+        "apiVersion": "2021-09-01",
         "location": "[parameters('location')]",
 	"properties": {
             "minimumTlsVersion": "TLS1_2"
@@ -44,7 +44,7 @@
             {
                 "name": "default/backups",
                 "type": "blobServices/containers",
-                "apiVersion": "2018-07-01",
+                "apiVersion": "2021-09-01",
                 "dependsOn": [
 			"[parameters('storage_account_name')]"
                 ]

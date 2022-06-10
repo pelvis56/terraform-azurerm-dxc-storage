@@ -18,5 +18,5 @@ resource "azurerm_template_deployment" "stdstorage-containers" {
     "azurerm_storage_account.standard-storage"
   ]
 
-  template_body = file("/storage_account/storage-containers.json")
+  template_body = file("storage_account/storage-containers.json")
 }

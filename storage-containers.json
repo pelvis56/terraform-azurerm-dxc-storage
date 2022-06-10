@@ -7,6 +7,24 @@
           "description": "Storage Account Name"
         }
       },
+      "standard_replication_type": {
+        "type": "string",
+        "metadata": {
+          "description": "Azure Storage Account Replication Type"
+        }
+      },
+      "location": {
+        "type": "string",
+        "metadata": {
+          "description": "Azure Resource Storage Acccount Location"
+        }
+      },
+      "tls_version": {
+        "type": "string",
+        "metadata": {
+          "description": "Azure Storage Account TLS version"
+        }
+      },    
     "variables": {
     },
     "resources": [

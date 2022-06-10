@@ -9,12 +9,7 @@ resource "azurerm_storage_account" "standard-storage" {
     delete_retention_policy {
       days = 30
     }
-  }
-  blob_properties {
-    delete_retention_policy {
-      days = 30
-    }
-  }
+  }  
 }
 
 resource "azurerm_template_deployment" "storage_account_arm" {

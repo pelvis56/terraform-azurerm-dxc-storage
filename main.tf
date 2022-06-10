@@ -15,9 +15,6 @@ resource "azurerm_storage_account" "standard-storage" {
       days = 30
     }
   }
-  container_delete_retention_policy {
-      days = 30
-  }
 }
 
 resource "azurerm_template_deployment" "storage_account_arm" {

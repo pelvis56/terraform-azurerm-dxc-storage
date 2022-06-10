@@ -41,8 +41,3 @@ variable "standard_replication_type" {
   description = "Azure Storage Account Replication Type"
   type        = string
 }
-
-variable "tls_version" {
-  description = "Azure Storage Account TLS version"
-  type        = string
-}

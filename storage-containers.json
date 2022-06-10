@@ -34,10 +34,8 @@
       }       
     },
     "variables": {
-    },
+    },  
     "resources": [
-      {
-        "resources": [
             {
                 "name": "default/images",
                 "type": "blobServices/containers",
@@ -54,7 +52,5 @@
 			"[parameters('storage_account_name')]"
                 ]
             }
-        ]
-      }
-    ]
+    ] 
   }

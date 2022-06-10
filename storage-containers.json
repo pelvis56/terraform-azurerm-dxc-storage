@@ -20,7 +20,7 @@
         },
         "kind": "[parameters('StorageAccountKind')]",
         "properties": {
-            "MinimumTlsVersion" = "tls_version"
+            "MinimumTlsVersion" = "[parameters('tls_version')]"
         },
         "resources": [ 
            {

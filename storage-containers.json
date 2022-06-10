@@ -47,7 +47,25 @@
         "kind": "[parameters('StorageAccountKind')]",
         "properties": {
           "MinimumTlsVersion": "[parameters('tls_version')]"
-        }
+        },          
+        "resources": [
+                {
+                    "name": "default/images",
+                    "type": "blobServices/containers",
+                    "apiVersion": "2018-07-01",
+                    "dependsOn": [
+                        "[parameters('storageAccountName')]"
+                    ]
+                },
+                {
+                    "name": "default/backups",
+                    "type": "blobServices/containers",
+                    "apiVersion": "2018-07-01",
+                    "dependsOn": [
+                        "[parameters('storageAccountName')]"
+                    ]
+                }
+          ]
       }
     ]
   }

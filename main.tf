@@ -19,4 +19,11 @@ resource "azurerm_template_deployment" "stdstorage-containers" {
   ]
 
   template_body = file("storage_account/storage-containers.json")
+  
+  template_body       = file("storage-account.json",)
+  parameters = {
+    storageAccountName      = standard-storage.name
+    location                = standard-storage.location   
+  }
+  
 }

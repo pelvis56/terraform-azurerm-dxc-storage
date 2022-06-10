@@ -36,7 +36,7 @@
             {
                 "name": "default/images",
                 "type": "blobServices/containers",
-                "apiVersion": "2018-07-01",
+                "apiVersion": "2021-09-01",
                 "dependsOn": [
 			"[parameters('storage_account_name')]"
                 ]

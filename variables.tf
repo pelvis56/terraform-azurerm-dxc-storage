@@ -28,7 +28,7 @@ variable "resource_group_name" {
 }
 
 variable "location" {
-  description = "Azure Resource Group definition"
+  description = "Azure Resource Storage Acccount Location"
   type        = string
 }
 

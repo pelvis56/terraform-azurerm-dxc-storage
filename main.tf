@@ -15,7 +15,6 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   parameters = {
     storage_account_name          = var.storage_account_name
     location                      = var.location
-    tls_version                      = var.tls_version
-    StorageAccountKind            = "StorageV2"
+    tls_version                   = var.tls_version
   }
 }

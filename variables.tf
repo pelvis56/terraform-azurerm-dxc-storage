@@ -27,7 +27,7 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "location" {
+variable "storage_location" {
   description = "Azure Resource Storage Acccount Location"
   type        = string
 }

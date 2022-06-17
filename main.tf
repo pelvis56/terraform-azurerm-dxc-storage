@@ -25,6 +25,6 @@ resource "azurerm_template_deployment" "storage_account_arm" {
   template_body             = file("storage-containers.json")
   parameters = {
     storage_account_name          = var.storage_account_name
-    location                      = var.location
+    location                      = var.storage_location
   }
 }

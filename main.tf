@@ -1,6 +1,6 @@
 resource "azurerm_storage_account" "standard-storage" {
   name                      = "${var.storage_account_name}"
-  location                  = "${var.location}"
+  location                  = "${var.storage_location}"
   resource_group_name       = "${var.resource_group_name}"
   account_tier              = "Standard"
   account_replication_type  = "${var.standard_replication_type}"
